@@ -30,7 +30,8 @@ This endpoint is used to create a new user bill. The following information is re
     "dateOfService": "2022-01-01",
     "billAmount": 1000
   }
-} ```
+} 
+```
 
 ## Endpoint 2: /v1/getUserBills
 This endpoint is used to retrieve all of the user bills.
@@ -59,6 +60,7 @@ Example request:
   ]
 }
 ```
+
 ## Running the API
 - Clone the repository to your local machine
 - Run npm install to install the required dependencies
