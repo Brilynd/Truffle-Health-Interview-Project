@@ -1,7 +1,8 @@
 # Truffle-Health-Interview-Project
+
 This is a Node.js API with 2 endpoints for creating and retrieving user bills.
 
-##Endpoint 1: /v1/createUserBill
+## Endpoint 1: /v1/createUserBill
 This endpoint is used to create a new user bill. The following information is required for creating a bill:
 
 Patient Name
@@ -10,9 +11,7 @@ Date of Service
 Bill Amount
 Example request:
 
-bash
-Copy code
-POST /v1/createUserBill
+```POST /v1/createUserBill```
 
 {
   "patientName": "John Doe",
@@ -22,9 +21,7 @@ POST /v1/createUserBill
 }
 Example response:
 
-json
-Copy code
-{
+``` {
   "message": "Bill created successfully",
   "bill": {
     "patientName": "John Doe",
@@ -32,19 +29,17 @@ Copy code
     "dateOfService": "2022-01-01",
     "billAmount": 1000
   }
-}
-##Endpoint 2: /v1/getUserBills
+} ```
+## Endpoint 2: /v1/getUserBills
 This endpoint is used to retrieve all of the user bills.
 
 Example request:
 
-bash
-Copy code
-GET /v1/getUserBills
+
+```GET /v1/getUserBills```
 Example response:
 
-json
-Copy code
+```
 {
   "bills": [
     {
@@ -61,7 +56,8 @@ Copy code
     }
   ]
 }
-##Running the API
+```
+## Running the API
 Clone the repository to your local machine
 Run npm install to install the required dependencies
 Run npm start to start the API
